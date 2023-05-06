@@ -1,19 +1,15 @@
 import React, {useContext} from 'react';
 import { ThemeContext } from '../../App';
-
+import { Report } from '../../components/Report/Report';
+import { Features } from '../../components/features/Features';
 
 export default function Landing() {
-    const {search,setSearch,width1,setDrawer,setSearchResult} = useContext(ThemeContext);
+    const {search,setSearch,setSearchResult} = useContext(ThemeContext);
     
   
-    return (
-    <div>landing
-    hello how are you
-    
-    
-    
-    </div>
-    
-
+    return ( <>
+      <Report />
+      <Features />
+    </>
   )
 }

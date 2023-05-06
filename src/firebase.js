@@ -3,16 +3,6 @@ import { initializeApp } from "firebase/app";
 //import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 import { getAuth} from "firebase/auth";
-import { useState } from 'react';
-
-import { loginFields } from "./constants/formFields";
-import FormAction from "./src/constants/FormAction";
-import FormExtra from "./src/constants/FormExtra";
-import Input from "./components/Input";
-
-const fields = loginFields;
-let fieldsState = {};
-fields.forEach(field => fieldsState[field.id] = '');
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
