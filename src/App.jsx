@@ -8,7 +8,7 @@ import LoginPage from "./pages/login/LoginPage";
 import Navbar from './components/navbar/navbar';
 import { ReportForm } from "./pages/reportForm/ReportForm";
 import { Response } from "./pages/response/Response";
-import therapy from "./pages/therapy/therapy";
+import Therapy from "./pages/therapy/therapy";
 
 export const ThemeContext = React.createContext();
 export const FirebaseContext = React.createContext(null);
@@ -33,7 +33,6 @@ export default function App() {
 
   return (
     <div className="App w-screen mt-0 overflow-hidden mx-auto">
-      <therapy />
       <ThemeContext.Provider value={{loginState,setLoginState,signupState,setSignupState,user,setUser}}>
       <Navbar />
         <BrowserRouter>
