@@ -48,7 +48,8 @@ export default function Signup(){
   }
 
   return(
-    <form className="mt-8 space-y-6 py-2 px-4" onSubmit={handleSubmit}>
+    <div class="max-w-full mx-auto flex items-center justify-between ">
+    <form className="mt-12 space-y-6 py-2 px-4" onSubmit={handleSubmit}>
       <div className="">
         {
           fields.map(field=>
@@ -69,5 +70,6 @@ export default function Signup(){
         <FormAction handleSubmit={handleSubmit} text="Signup" />
       </div>
     </form>
+    </div>
   )
 }

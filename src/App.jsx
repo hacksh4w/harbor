@@ -29,15 +29,9 @@ export default function App() {
 */}
 
   return (
-    <div className="App">
+    <div className="App w-screen mt-0 overflow-hidden mx-auto">
       <ThemeContext.Provider value={{loginState,setLoginState,signupState,setSignupState,user,setUser}}>
       <Navbar />
-      
-
-      {/* ------------------------------Landing Page----------------------------------- */}
-
-      
-
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />}></Route>

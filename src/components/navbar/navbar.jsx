@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div class="max-w-full">
-    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-3">
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-3 mb-4">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <svg
         class="fill-current h-8 w-8 mr-2"
