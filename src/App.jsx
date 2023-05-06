@@ -1,16 +1,42 @@
 import React, {useState, useContext, createContext, useEffect} from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
+export const ThemeContext = createContext();
 
-export default function App() {
+
+function App() {
   {
     /* initialize();  for firebase */
   }
-
+  const [signin,setSignin] = useState(false);
+  const [signup,setSignup] = useState(false);
+  const [user,setUser] = useState({});
+  const [auths,setAuth] = useState({
+    name:'',
+    email:'',
+    acctype:'',
+    pass:'',
+    confirmpass:'',
+    signedin: false
+  });
+  const [wrongpass,setWrongPass] = useState(false)
+ {/*} const [filters, setFilters] = useState({
+    sliderValue:[1000,3600],
+    wifi:false,
+    ac: false,
+    food:false,
+    kitchen:false,
+    pets:false,
+    abathroom:false,
+    sdeposit:false,
+  })  */}
   return (
-    <>
-      {/* ------------------------------Navbar----------------------------------- */}
-      <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-2">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <div className="App">
+      <ThemeContext.Provider value={{user,setUser,wrongpass,setWrongPass,signup,signin,setSignin,setSignup,auths,setAuth}}>
+       {/*  <Navbar/>
+      ------------------------------Navbar----------------------------------- */}
+      <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-3">
+        <div className="flex items-center flex-shrink-0 text-white mr-6">
           <svg
             class="fill-current h-8 w-8 mr-2"
             width="54"
@@ -74,12 +100,9 @@ export default function App() {
           Report Abuse
         </button>
       </div>
-      {/* <div>
-        <Routes>
-          <Route path="/" element={<Landing />}></Route>
-          <Route path="/signin" element={<SignIn />}></Route>
-        </Routes>
-      </div> */}
+       
+  
+      
 
       {/* ------------------------------Features--------------------------------------------- */}
       <h2>Features</h2>
@@ -148,6 +171,15 @@ export default function App() {
           </span>
         </div>
       </div>
-    </>
+
+        <Routes>
+          <Route path="/" element={<Landing />}></Route>
+          <Route path="/signup" element={<signup />}></Route>
+        </Routes>
+      </ThemeContext.Provider>
+    </div>
   );
 }
+
+
+export default App;
