@@ -2,8 +2,9 @@ import React, {useState, useContext, createContext, useEffect} from "react";
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from './components/footer/Footer';
 import Landing from "./pages/landing/landing";
-import Signup from "./pages/signup/Signup";
+import SignupPage from "./pages/signup/SignupPage";
 import "./App.css";
+import LoginPage from "./pages/login/LoginPage";
 export const ThemeContext = createContext();
 
 
@@ -179,7 +180,9 @@ export default function App() {
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />}></Route>
-          <Route path="/signup" element={<Signup />}></Route></Routes>
+          <Route path="/signup" element={<SignupPage />}></Route>
+          <Route path="/login" element={<LoginPage />}></Route>
+        </Routes>
         </BrowserRouter>
       </ThemeContext.Provider>
     </div>
