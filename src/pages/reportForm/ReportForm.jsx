@@ -20,7 +20,7 @@ export const ReportForm = () => {
     };
   
     return (
-      <div className="popup-form-container">
+      <div className="popup-form-container flex items-center justify-center h-screen pt-20">
         <form className="w-full max-w-sm h-screen" >
   
           <div className="md:flex md:items-center mb-6">
