@@ -1,10 +1,13 @@
 import React, {useState, useContext, createContext, useEffect} from "react";
-import { Routes, Route } from "react-router-dom";
+import {BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from './components/footer/Footer';
+import Landing from "./pages/landing/landing";
+import Signup from "./pages/signup/Signup";
 import "./App.css";
 export const ThemeContext = createContext();
 
 
-function App() {
+export default function App() {
   {
     /* initialize();  for firebase */
   }
@@ -170,16 +173,15 @@ function App() {
             #3
           </span>
         </div>
+        <footer />
       </div>
 
+        <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />}></Route>
-          <Route path="/signup" element={<signup />}></Route>
-        </Routes>
+          <Route path="/signup" element={<Signup />}></Route></Routes>
+        </BrowserRouter>
       </ThemeContext.Provider>
     </div>
   );
 }
-
-
-export default App;
