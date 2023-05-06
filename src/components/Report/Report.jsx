@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
+import "./Report.css"
 
 
 export const Report = () => {
  
   return (
-    <div>
+    <div className='repotdiv'>
     <div class="max-w-full py-6 overflow-hidden shadow-lg">
     <h1>SheHacks Project</h1>
     <div class="py-4">

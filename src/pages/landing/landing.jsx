@@ -8,8 +8,11 @@ export default function Landing() {
     
   
     return ( <>
-      <Report />
-      <Features />
+    <div className='h-screen'>
+    <Report />
+    <Features />
+    </div>
+      
     </>
   )
 }

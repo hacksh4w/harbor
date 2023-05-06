@@ -3,7 +3,8 @@ import React from 'react'
 export const Features = () => {
   return ( 
     <>
-    <div class="max-w-sm rounded overflow-hidden shadow-lg float-left">
+    <div className='flex flex-col flex-wrap md:flex-row justify-center'>
+    <div class="max-w-sm w-full rounded overflow-hidden shadow-lg float-left">
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">Therapy Session</div>
         <p class="text-gray-700 text-base">
@@ -66,6 +67,7 @@ export const Features = () => {
         </span>
       </div>
 
+      </div>
       </div>
 
       </>
