@@ -6,6 +6,8 @@ import SignupPage from "./pages/signup/SignupPage";
 import "./App.css";
 import LoginPage from "./pages/login/LoginPage";
 import Navbar from './components/navbar/Navbar';
+import { ReportForm } from "./pages/reportForm/ReportForm";
+import { Response } from "./pages/response/Response";
 
 export const ThemeContext = React.createContext();
 export const FirebaseContext = React.createContext(null);
@@ -43,6 +45,8 @@ export default function App() {
           <Route path="/" element={<Landing />}></Route>
           <Route path="/signup" element={<SignupPage />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>
+          <Route path="/reportform" element={<ReportForm />}></Route>
+          <Route path="/response" element={<Response />}></Route>
         </Routes>
         </BrowserRouter>
       </ThemeContext.Provider>
