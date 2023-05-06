@@ -5,7 +5,7 @@ import Landing from "./pages/landing/landing";
 import SignupPage from "./pages/signup/SignupPage";
 import "./App.css";
 import LoginPage from "./pages/login/LoginPage";
-import Navbar from './components/navbar/Navbar';
+import Navbar from './components/navbar/navbar';
 import { ReportForm } from "./pages/reportForm/ReportForm";
 import { Response } from "./pages/response/Response";
 
