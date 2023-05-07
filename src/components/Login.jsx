@@ -38,7 +38,7 @@ fields.forEach(field=>fieldsState[field.id]='');
         };
       
         return (
-          <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+          <form className="mt-8 space-y-6 w-full max-w-screen-xl" onSubmit={handleSubmit}>
             <div className="-space-y-px">
               {fields.map((field) => (
                 <Input

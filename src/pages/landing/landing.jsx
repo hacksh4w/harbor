@@ -8,9 +8,9 @@ export default function Landing() {
     
   
     return ( <>
-    <div className='h-screen'>
-    <Report />
-    <Features />
+    <div className='max-h-screen'>
+      <Report />
+      <Features />
     </div>
       
     </>

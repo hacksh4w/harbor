@@ -1,5 +1,7 @@
 import {Link} from "react-router-dom";
 import React from "react";
+import logo from "../assets/logo.png";
+
 export default function Header({heading, paragraph, linkName, linkUrl = "#"}) {
   return (
     <div className="mb-10">
@@ -7,7 +9,7 @@ export default function Header({heading, paragraph, linkName, linkUrl = "#"}) {
         <img
           alt=""
           className="h-14 w-14"
-          src="./assets/http://www.w3.org/2000/svg"
+          src={logo}
         />
       </div>
       <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">

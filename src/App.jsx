@@ -32,9 +32,10 @@ export default function App() {
 */}
 
   return (
-    <div className="App w-screen mt-0 overflow-hidden mx-auto">
+    <div className="App w-screen bg-cl2 mt-0 overflow-hidden mx-auto">
       <ThemeContext.Provider value={{loginState,setLoginState,signupState,setSignupState,user,setUser}}>
       <Navbar />
+      
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />}></Route>
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/response" element={<Response />}></Route>
         </Routes>
         </BrowserRouter>
+        <Footer className="my-0" />
       </ThemeContext.Provider>
     </div>
   );
